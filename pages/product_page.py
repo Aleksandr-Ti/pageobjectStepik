@@ -28,7 +28,7 @@ class ProductPage(BasePage):
         productTitle = productTitleString.text
         productTitleNotifString = self.browser.find_element(*ProducPageLocators.PRODUCT_TITLE_NOTIF)
         productTitleInNotif = productTitleNotifString.text
-        assert productTitle == productTitleInNotif, f"expect {productTitle} in notification, get {productTitleInNotif}"
+        assert productTitle == productTitleInNotif, f"expect '{productTitle}' in notification, get '{productTitleInNotif}'"
 
 
 
