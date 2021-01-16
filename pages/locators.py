@@ -14,3 +14,4 @@ class ProducPageLocators():
     BASKET_TOTAL = (By.CSS_SELECTOR, ".basket-mini")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".price_color")
     PRODUCT_TITLE_NOTIF = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div > strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages > div:nth-child(1)")
