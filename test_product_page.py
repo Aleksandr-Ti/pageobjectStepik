@@ -35,3 +35,13 @@ def test_message_disappeared_after_adding_product_to_basket(browser):
     productpage.add_product_to_basket()
     productpage.should_disapper_success_notification()
 
+def test_guest_should_see_login_link_on_product_page(browser):
+    productpage = ProductPage(browser, link)
+    productpage.open()
+    productpage.should_be_login_link()
+
+def test_guest_can_go_to_login_page_from_product_page(browser):
+    productpage = ProductPage(browser, link)
+    productpage.open()
+    productpage.go_to_login_page()
+
